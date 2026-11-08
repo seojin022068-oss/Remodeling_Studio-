@@ -92,8 +92,9 @@ footer{max-width:1180px;margin:0 auto;padding:24px;border-top:1px solid var(--li
 <a href="#open">02 결정</a>
 <a href="#sun">03 해 분석</a>
 <a href="#experiments">04 배치 실험</a>
-<a href="#distribution">05 분포도</a>
-<a href="#next">06 다음</a>
+<a href="#decision">05 선택</a>
+<a href="#distribution">06 분포도</a>
+<a href="#next">07 다음</a>
 </nav>
 </div></header>
 
@@ -384,9 +385,51 @@ footer{max-width:1180px;margin:0 auto;padding:24px;border-top:1px solid var(--li
 <figure><img src="img/free.png" alt="자유 곡선 배치의 좋은 예와 나쁜 예, 요인 차트, 규칙"><figcaption>자유 곡선 6,000가지 — 3F·4F가 유리 앞 5m 안으로 들어올수록 어두워진다</figcaption></figure>
 </section>
 
-<section class="view" id="v-distribution" data-title="05 분포도">
-<div class="crumb">05 · 2026.11.07</div>
-<h1>빛이 정한 자리는 곡선이었다</h1>
+<section class="view" id="v-decision" data-title="05 선택">
+<div class="crumb">05 · 선택</div>
+<h1>그래서, 이렇게 한다</h1>
+<p class="sub">50가지 배치에서 읽은 규칙과 종합 분포도로 고른 평면 분포</p>
+
+<h2>50가지에서 읽은 규칙</h2>
+<table>
+<tr><th>규칙</th><th>왜</th></tr>
+<tr><td>유리 앞은 비운다</td><td>상위 배치는 모두 건물 유리 앞을 비웠다. 막히면 아래층 실내가 바로 어두워진다.</td></tr>
+<tr><td>3 · 4층은 유리 앞 약 5m 밖에 둔다</td><td>위층일수록 하늘을 크게 가린다. 3 · 4층이 이 띠 안으로 들어올수록 점수가 떨어졌다.</td></tr>
+<tr><td>위아래 층을 겹치지 않게 엇갈린다</td><td>겹치면 그림자가 두 번 진다. 엇갈려야 아래층까지 하늘빛이 내려간다.</td></tr>
+<tr><td>2층은 자유롭다</td><td>가장 아래라 다른 층을 가리지 않는다. 크리틱 광장과 입구를 여기에 둔다.</td></tr>
+</table>
+
+<h2>선택한 평면 분포</h2>
+<figure><img src="img/kde_combo.png" alt="층별로 유리한 자리를 겹친 종합 분포도"><figcaption>종합 분포도 — 3층은 바깥쪽 띠, 4층은 코어 쪽 활, 가운데와 유리 앞은 비움, 2층은 어디든</figcaption></figure>
+
+<h2>층별로 이렇게 한다</h2>
+<table>
+<tr><th>층</th><th>자리</th><th>건물과 연결</th><th>시선 단계</th><th>형태</th></tr>
+<tr><td>2층</td><td>가운데 크리틱 광장 + 입구</td><td>두 곳</td><td>열림</td><td>쌍계단이 내려오는 광장을 오목하게 감싼다</td></tr>
+<tr><td>3층</td><td>바깥쪽 띠 (유리 앞 5m 밖)</td><td>떨어짐</td><td>걸러짐</td><td>중정을 향해 오목한 곡선 띠. 건물과의 틈으로 빛과 시선이 지나간다</td></tr>
+<tr><td>4층</td><td>코어 쪽을 따라 휘는 활</td><td>두 곳 (코어 쪽)</td><td>감싸임 → 걸러짐</td><td>휘어 내려오며 계단참을 감싼다. 지붕 막이 그 위를 덮는다</td></tr>
+<tr><td>유리 앞 · 가운데</td><td>보이드</td><td>—</td><td>—</td><td>비운다. 빛 우물이자 크리틱 무대 위의 하늘</td></tr>
+</table>
+
+<h2>입면과 단면에서는</h2>
+<div class="body">
+<ul class="clean">
+<li><b>위로 갈수록 물러난다</b> — 3 · 4층이 유리에서 멀어지니 겨울의 낮은 해와 하늘빛이 아래층 유리까지 닿는다.</li>
+<li><b>3층은 떠 있다</b> — 건물과 3층 사이의 틈이 입면에서 세로로 열린 빛의 띠가 된다.</li>
+<li><b>지붕 막은 위층에만</b> — 4층 위를 덮어 쉬는 자리를 감싸고, 아래층의 하늘은 가리지 않는다.</li>
+</ul>
+</div>
+<div class="dgrid">
+<figure><img src="img/dwg-4.jpg" alt="중정 쪽 입면"><figcaption>현재 중정 쪽 입면 — 이 규칙으로 다시 그린다</figcaption></figure>
+<figure><img src="img/dwg-5.jpg" alt="단면"><figcaption>현재 단면 — 층별로 물러나는 모습과 해의 각도를 더한다</figcaption></figure>
+</div>
+
+<p class="pull">빛은 어디를 비울지 정했고,<br>시선은 그 자리를 어떻게 감쌀지 정한다.</p>
+</section>
+
+<section class="view" id="v-distribution" data-title="06 분포도">
+<div class="crumb">06 · 2026.11.07</div>
+<h1>빛이 정한 자리</h1>
 <p class="sub">전체 후보와 빛 좋은 배치의 밀도 비교</p>
 <figure><img src="img/kde_map.png" alt="층별 테라스 분포도, 전체 후보와 빛 좋은 배치 비교"><figcaption>위: 전체 후보 887개 · 아래: 빛 점수 상위 10%가 자주 고른 곳(빨강) / 피한 곳(파랑)</figcaption></figure>
 <figure><img src="img/kde_combo.png" alt="층별로 유리한 자리를 겹친 종합 분포도"><figcaption>종합 분포도</figcaption></figure>
@@ -401,8 +444,8 @@ footer{max-width:1180px;margin:0 auto;padding:24px;border-top:1px solid var(--li
 </div>
 </section>
 
-<section class="view" id="v-next" data-title="06 다음">
-<div class="crumb">06 · 진행 중</div>
+<section class="view" id="v-next" data-title="07 다음">
+<div class="crumb">07 · 진행 중</div>
 <h1>다음 할 일</h1>
 <p class="sub">작업이 끝날 때마다 이 기록에 이어 붙인다</p>
 <div class="body">
@@ -430,7 +473,7 @@ footer{max-width:1180px;margin:0 auto;padding:24px;border-top:1px solid var(--li
 
 <script>
 (function(){
-  var order=['overview','story','thesis','drawings','problem','open','sun','experiments','distribution','next'];
+  var order=['overview','story','thesis','drawings','problem','open','sun','experiments','decision','distribution','next'];
   function show(){
     var h=(location.hash||'#overview').slice(1); if(order.indexOf(h)<0) h='overview';
     order.forEach(function(k){
