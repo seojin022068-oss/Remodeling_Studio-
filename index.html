@@ -94,8 +94,9 @@ footer{max-width:1180px;margin:0 auto;padding:24px;border-top:1px solid var(--li
 <a href="#experiments">04 배치 실험</a>
 <a href="#decision">05 선택</a>
 <a href="#interior">06 실내의 빛</a>
-<a href="#distribution">07 분포도</a>
-<a href="#next">08 다음</a>
+<a href="#roof">07 지붕 · 차양</a>
+<a href="#distribution">08 분포도</a>
+<a href="#next">09 다음</a>
 </nav>
 </div></header>
 
@@ -529,11 +530,64 @@ footer{max-width:1180px;margin:0 auto;padding:24px;border-top:1px solid var(--li
 <tr><td>3~6m</td><td>2~7%</td><td>책상 작업, 개인 자리</td><td>보이지만 멀다</td></tr>
 <tr><td>6~12.9m</td><td>2% 미만</td><td>복도 · 수납 · 모니터 작업 · 크리틱 준비실</td><td>보이지 않는 쉼 — 감싸임</td></tr>
 </table>
+<h2>문화관 전체로 확장 — 덩어리가 안으로</h2>
+<div class="body">
+<p>같은 설정값으로 중정에 면한 긴 동 전체(유리 38.1m)로 넓혔다. 16위가 없던 남쪽 17.1m는 같은 규칙(층마다 정사각형 3개, 2층 접합부 둘 이상, 4층 접합부 하나 이상, 3층은 떨어짐, 위아래 겹치지 않음)으로 5,000가지를 탐색해 가장 빛을 덜 가리는 배치를 골랐고, 전체를 같은 값(퍼짐 1.6m, 빛 비용 0.5, 면적 유지, 다리 폭 2m)으로 분포로 바꿨다. 긴 동 전체 점수는 정사각형 85.9 → 분포 86.8.</p>
+<p>실내에서는 테라스가 건물에 닿는 접합부, 그리고 3층 섬이 유리에 가장 가까이 오는 자리에서 덩어리가 실 안으로 번진다. 덩어리는 빛이 2% 이상 닿는 깊이까지만 들어온다 — 칸막이를 걷어 열린 작업 · 전시 자리로 쓰는 범위다.</p>
+</div>
+<figure><img src="img/whole_interior.png" alt="문화관 전체 평면 위 층별 실내 주광률, 안으로 들어오는 덩어리, 테라스"><figcaption>기존 평면 위에 겹침 (2층은 3층 평면으로 대신함). 색 = 실내 주광률, 연한 덩어리 = 안으로 들어오는 자리, 진한 판 = 그 층 테라스, 점선 = 다른 층. 회색 점선 오른쪽이 16위 원안, 왼쪽이 확장</figcaption></figure>
+<p class="small" style="font-size:13px;color:var(--muted)">확인할 것: 중정의 1층 별동(약 4.5m 높이) 위로 2층 테라스 일부가 지나간다 — 별동 지붕을 2층 테라스와 함께 쓰거나 테라스를 비켜야 한다.</p>
+
 <p class="pull">입면을 열면 빛은 6m까지 들어온다.<br>그 6m가 서로의 작업이 보이는 깊이다.</p>
 </section>
 
-<section class="view" id="v-distribution" data-title="07 분포도">
-<div class="crumb">07 · 2026.11.07</div>
+<section class="view" id="v-roof" data-title="07 지붕 · 차양">
+<div class="crumb">07 · 지붕 · 차양</div>
+<h1>창가가 너무 뜨겁다</h1>
+<p class="sub">입면을 열자 창가 2m가 안쪽보다 5~6배 밝아졌다. 고른 빛을 위해 테라스 위로 막 지붕을 올린다 — 겹치는 지붕과 겹치지 않는 지붕</p>
+
+<h2>문제</h2>
+<div class="body">
+<p>입면을 연 뒤 긴 동의 창가 0~2m 주광률은 20~30%, 안쪽 3~6m는 3.6~5%다. 창가가 안쪽보다 <b>5.6~6.1배</b> 밝고, 서향이라 겨울 오후 해가 창가에 30~37%의 시간 동안 든다. 창가는 뜨겁고 눈부시고, 안쪽은 상대적으로 어둡게 느껴진다.</p>
+</div>
+
+<h2>지붕 설정</h2>
+<table>
+<tr><th></th><th>값</th></tr>
+<tr><td>재료</td><td>직조 막, 빛 투과율 30%</td></tr>
+<tr><td>평면</td><td>각 층 테라스를 2m 넓히고, 유리 쪽으로 4m 더 내민다 (창가에 그늘을 주기 위해)</td></tr>
+<tr><td>높이 (위로 올림)</td><td>2층 테라스 위 +7.9m · 3층 테라스 위 +11.4m · 4층 테라스 위 +14.9m — 각 층 바닥에서 약 4.5m, 위층 바닥보다 높게</td></tr>
+<tr><td>A. 겹침</td><td>층별 지붕이 평면에서 서로 포개진다</td></tr>
+<tr><td>B. 안 겹침</td><td>위층 지붕이 차지한 곳은 아래층 지붕에서 빼고, 지붕 사이를 1m 띄운다</td></tr>
+</table>
+<figure><img src="img/roof_plan.png" alt="겹치는 지붕과 겹치지 않는 지붕의 평면"><figcaption>파랑이 진할수록 높은 지붕. 주황 점선은 아래 테라스</figcaption></figure>
+<figure><img src="img/roof_section.png" alt="두 지붕 버전의 단면"><figcaption>x = 27m에서 자른 단면. 겨울 오후의 낮은 해를 위층 지붕이 먼저 거른다</figcaption></figure>
+
+<h2>실내의 빛</h2>
+<figure><img src="img/roof_interior.png" alt="1층과 2층 실내 주광률: 지붕 없음, 겹치는 지붕, 겹치지 않는 지붕"><figcaption>1 · 2층 긴 동 실내. 흰 선 = 주광률 2%</figcaption></figure>
+<figure><img src="img/roof_chart.png" alt="층별 창가 밝기, 창가/안쪽 비, 작업 가능 면적 비교"><figcaption>층별 비교</figcaption></figure>
+<table>
+<tr><th>1F · 2F · 3F · 4F</th><th>지붕 없음</th><th>A. 겹침</th><th>B. 안 겹침</th></tr>
+<tr><td>창가 0~2m 주광률 (%)</td><td>20 · 26 · 27 · 30</td><td>9 · 10 · 17 · 22</td><td>13 · 15 · 19 · 22</td></tr>
+<tr><td>창가 / 안쪽 비 (배)</td><td>5.6 · 6.1 · 6.0 · 6.0</td><td>3.4 · 4.4 · 6.2 · 6.1</td><td>3.9 · 4.5 · 5.7 · 6.1</td></tr>
+<tr><td>작업 가능 면적 (%)</td><td>46 · 49 · 50 · 52</td><td>42 · 37 · 39 · 46</td><td>46 · 46 · 45 · 46</td></tr>
+<tr><td>창가 겨울 해 (%)</td><td>30 · 35 · 35 · 37</td><td>23 · 21 · 23 · 31</td><td>27 · 28 · 27 · 31</td></tr>
+</table>
+
+<h2>읽은 것</h2>
+<div class="body">
+<ul class="clean">
+<li><b>A. 겹치는 지붕</b>은 창가를 가장 많이 식힌다. 1 · 2층 창가 주광률이 절반 이하로(20 → 9%, 26 → 10%) 내려가고 창가 / 안쪽 비가 3.4~4.4배로 가장 고르다. 하지만 안쪽까지 어두워져 2 · 3층의 작업 가능 면적이 10%p 이상 줄어든다.</li>
+<li><b>B. 겹치지 않는 지붕</b>은 창가를 13~15%로 낮추면서 작업 가능 면적을 거의 그대로(46%) 지킨다. 지붕 사이 1m 틈으로 하늘빛이 안쪽까지 내려가기 때문이다. 고른 빛과 밝기를 함께 지키는 쪽은 B다.</li>
+<li><b>3 · 4층 창가는 두 버전 모두 덜 식는다.</b> 지붕이 유리에서 멀고 높아 위층 창가에는 그늘이 덜 닿는다. 4층 위 지붕을 유리 쪽으로 더 내밀거나 낮추는 것을 다음에 검토한다.</li>
+</ul>
+</div>
+<p class="pull">겹치지 않는 지붕 사이의 틈이<br>창가의 열은 거르고, 안쪽의 빛은 남긴다.</p>
+<p class="small" style="font-size:13px;color:var(--muted)">가정: 막 투과율 30%(반사 · 산란 무시), 고른 하늘과 맑은 날 직사광, 실내 반사 무시, 맞은편 건물 제외.</p>
+</section>
+
+<section class="view" id="v-distribution" data-title="08 분포도">
+<div class="crumb">08 · 2026.11.07</div>
 <h1>빛이 정한 자리</h1>
 <p class="sub">전체 후보와 빛 좋은 배치의 밀도 비교</p>
 <figure><img src="img/kde_map.png" alt="층별 테라스 분포도, 전체 후보와 빛 좋은 배치 비교"><figcaption>위: 전체 후보 887개 · 아래: 빛 점수 상위 10%가 자주 고른 곳(빨강) / 피한 곳(파랑)</figcaption></figure>
@@ -549,8 +603,8 @@ footer{max-width:1180px;margin:0 auto;padding:24px;border-top:1px solid var(--li
 </div>
 </section>
 
-<section class="view" id="v-next" data-title="08 다음">
-<div class="crumb">08 · 진행 중</div>
+<section class="view" id="v-next" data-title="09 다음">
+<div class="crumb">09 · 진행 중</div>
 <h1>다음 할 일</h1>
 <p class="sub">작업이 끝날 때마다 이 기록에 이어 붙인다</p>
 <div class="body">
@@ -578,7 +632,7 @@ footer{max-width:1180px;margin:0 auto;padding:24px;border-top:1px solid var(--li
 
 <script>
 (function(){
-  var order=['overview','story','thesis','drawings','problem','open','sun','experiments','decision','interior','distribution','next'];
+  var order=['overview','story','thesis','drawings','problem','open','sun','experiments','decision','interior','roof','distribution','next'];
   function show(){
     var h=(location.hash||'#overview').slice(1); if(order.indexOf(h)<0) h='overview';
     order.forEach(function(k){
