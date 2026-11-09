@@ -93,8 +93,9 @@ footer{max-width:1180px;margin:0 auto;padding:24px;border-top:1px solid var(--li
 <a href="#sun">03 해 분석</a>
 <a href="#experiments">04 배치 실험</a>
 <a href="#decision">05 선택</a>
-<a href="#distribution">06 분포도</a>
-<a href="#next">07 다음</a>
+<a href="#interior">06 실내의 빛</a>
+<a href="#distribution">07 분포도</a>
+<a href="#next">08 다음</a>
 </nav>
 </div></header>
 
@@ -486,8 +487,53 @@ footer{max-width:1180px;margin:0 auto;padding:24px;border-top:1px solid var(--li
 <p class="pull">빛은 어디를 비울지 정했고,<br>이어짐은 어디에 닿을지 정했고,<br>시선은 그 자리를 어떻게 감쌀지 정한다.</p>
 </section>
 
-<section class="view" id="v-distribution" data-title="06 분포도">
-<div class="crumb">06 · 2026.11.07</div>
+<section class="view" id="v-interior" data-title="06 실내의 빛">
+<div class="crumb">06 · 실내의 빛</div>
+<h1>입면을 열면, 빛은 안으로 얼마나 들어오나</h1>
+<p class="sub">빛의 분포 테라스를 두고 중정 쪽 입면을 연 뒤, 1~4층 스튜디오 안 작업면에 닿는 빛</p>
+
+<h2>가정</h2>
+<table>
+<tr><th></th><th>내용</th></tr>
+<tr><td>입면</td><td>중정 쪽 유리를 층마다 바닥 위 0.1m부터 3.1m까지 연다</td></tr>
+<tr><td>실내</td><td>유리에서 안쪽 12.9m (긴 동의 깊이), 작업면 높이 0.85m, 0.5m 간격</td></tr>
+<tr><td>흐린 날</td><td>주광률 — 고른 하늘에서 바깥 대비 실내 작업면의 밝기. 2% 이상이면 책상 작업이 가능하다고 본다</td></tr>
+<tr><td>맑은 겨울</td><td>11~2월 직사광이 작업면에 닿는 시간 비율</td></tr>
+<tr><td>가리는 것</td><td>그 층보다 위에 있는 테라스 판, 코어 쪽 날개. 맞은편 건물과 실내 칸막이는 제외</td></tr>
+</table>
+
+<h2>층별 실내 빛 지도</h2>
+<figure><img src="img/interior_light.png" alt="층별 실내 주광률과 겨울 직사광 분포, 위층 테라스와 5,000 그리드"><figcaption>위: 흐린 날 주광률(흰 선 = 2%). 아래: 겨울 직사광. 채운 판은 그 층의 빛을 가리는 위층 테라스, 점선은 같은 층과 아래층. 빨간 일점쇄선은 5,000 그리드</figcaption></figure>
+<table>
+<tr><th>층</th><th>주광률 (테라스 없음)</th><th>주광률 (빛 분포)</th><th>2%가 닿는 깊이</th><th>2% 이상 면적</th><th>겨울 직사광</th></tr>
+<tr><td>1F</td><td>5.4%</td><td>4.0%</td><td>4.7m</td><td>38%</td><td>33%</td></tr><tr><td>2F</td><td>5.6%</td><td>5.3%</td><td>5.5m</td><td>44%</td><td>35%</td></tr><tr><td>3F</td><td>6.0%</td><td>5.9%</td><td>5.9m</td><td>47%</td><td>36%</td></tr><tr><td>4F</td><td>6.4%</td><td>6.4%</td><td>6.2m</td><td>50%</td><td>36%</td></tr>
+</table>
+
+<h2>깊이에 따른 빛</h2>
+<figure><img src="img/interior_depth.png" alt="층별 유리에서의 깊이에 따른 주광률"><figcaption>테라스 없음 · 정사각형 16위 · 빛 분포 비교. 세로 선은 3m와 6m</figcaption></figure>
+
+<h2>읽은 것</h2>
+<div class="body">
+<ul class="clean">
+<li><b>빛은 약 5~6m까지 들어온다.</b> 12.9m 깊이 중 유리 쪽 절반이 책상 작업이 가능한 밝기(2% 이상)다. 이 깊이를 정하는 것은 테라스가 아니라 실의 깊이와 유리 높이다.</li>
+<li><b>테라스가 빼앗는 빛은 1층의 유리 앞 3m에 몰린다.</b> 1층 유리 바로 앞 주광률이 33% → 24%로 줄지만, 3m 안쪽부터는 테라스가 없을 때와 거의 같다. 2층은 아주 조금, 3 · 4층은 차이가 없다.</li>
+<li><b>빛 분포가 정사각형보다 1층을 덜 가린다.</b> 1층 평균 주광률 3.7% → 4.0%.</li>
+<li><b>겨울 오후 해는 깊이 들어온다.</b> 서향이라 낮은 해가 실 안쪽까지 닿는다. 눈부심이 생기는 시간이다 — 테라스 판과 막 지붕의 그늘이 이를 거른다. 1층에는 테라스 그림자가 사선 줄무늬로 진다.</li>
+</ul>
+</div>
+
+<h2>그래서 실내는 이렇게 나눈다</h2>
+<table>
+<tr><th>유리에서</th><th>빛</th><th>쓰임</th><th>시선</th></tr>
+<tr><td>0~3m</td><td>주광률 7% 이상, 겨울 해가 드는 띠</td><td>모형 · 드로잉 작업대, 작업을 거는 벽</td><td>테라스에서 비스듬히 보이는 자리 — 걸러짐</td></tr>
+<tr><td>3~6m</td><td>2~7%</td><td>책상 작업, 개인 자리</td><td>보이지만 멀다</td></tr>
+<tr><td>6~12.9m</td><td>2% 미만</td><td>복도 · 수납 · 모니터 작업 · 크리틱 준비실</td><td>보이지 않는 쉼 — 감싸임</td></tr>
+</table>
+<p class="pull">입면을 열면 빛은 6m까지 들어온다.<br>그 6m가 서로의 작업이 보이는 깊이다.</p>
+</section>
+
+<section class="view" id="v-distribution" data-title="07 분포도">
+<div class="crumb">07 · 2026.11.07</div>
 <h1>빛이 정한 자리</h1>
 <p class="sub">전체 후보와 빛 좋은 배치의 밀도 비교</p>
 <figure><img src="img/kde_map.png" alt="층별 테라스 분포도, 전체 후보와 빛 좋은 배치 비교"><figcaption>위: 전체 후보 887개 · 아래: 빛 점수 상위 10%가 자주 고른 곳(빨강) / 피한 곳(파랑)</figcaption></figure>
@@ -503,8 +549,8 @@ footer{max-width:1180px;margin:0 auto;padding:24px;border-top:1px solid var(--li
 </div>
 </section>
 
-<section class="view" id="v-next" data-title="07 다음">
-<div class="crumb">07 · 진행 중</div>
+<section class="view" id="v-next" data-title="08 다음">
+<div class="crumb">08 · 진행 중</div>
 <h1>다음 할 일</h1>
 <p class="sub">작업이 끝날 때마다 이 기록에 이어 붙인다</p>
 <div class="body">
@@ -532,7 +578,7 @@ footer{max-width:1180px;margin:0 auto;padding:24px;border-top:1px solid var(--li
 
 <script>
 (function(){
-  var order=['overview','story','thesis','drawings','problem','open','sun','experiments','decision','distribution','next'];
+  var order=['overview','story','thesis','drawings','problem','open','sun','experiments','decision','interior','distribution','next'];
   function show(){
     var h=(location.hash||'#overview').slice(1); if(order.indexOf(h)<0) h='overview';
     order.forEach(function(k){
