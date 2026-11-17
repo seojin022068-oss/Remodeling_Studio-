@@ -96,7 +96,8 @@ footer{max-width:1180px;margin:0 auto;padding:24px;border-top:1px solid var(--li
 <a href="#interior">06 실내의 빛</a>
 <a href="#roof">07 지붕 · 차양</a>
 <a href="#distribution">08 분포도</a>
-<a href="#next">09 다음</a>
+<a href="#model17">10 채광 분석 · 지붕 위치</a>
+<a href="#next">다음</a>
 </nav>
 </div></header>
 
@@ -603,19 +604,79 @@ footer{max-width:1180px;margin:0 auto;padding:24px;border-top:1px solid var(--li
 </div>
 </section>
 
-<section class="view" id="v-next" data-title="09 다음">
-<div class="crumb">09 · 진행 중</div>
+<section class="view" id="v-model17" data-title="10 채광 분석 · 칸 높이 · 지붕 위치">
+<div class="crumb">10 · 2026.11.17</div>
+<h1>11주차 Rhino 모델 채광 분석, 칸 높이, 지붕 위치</h1>
+<p class="sub">대상 파일: 퍼블릭&amp;컬쳐디자인스튜디오_11주차_2.3dm (보이는 레이어: 기존 건물, 3F_육각형_머무는칸, 4F_삼각형_사이칸 · 지붕 레이어 숨김)</p>
+<div class="body">
+<h3>채광 점수 65 / 100</h3>
+<table>
+<thead><tr><th>항목</th><th>배점</th><th>점수</th><th>값</th></tr></thead>
+<tbody>
+<tr><td>실내 주광률 2% 이상 면적</td><td>30</td><td>29</td><td>72% (층판 없을 때 78%)</td></tr>
+<tr><td>실내 하늘 성분 0.5% 이상 면적</td><td>15</td><td>15</td><td>91%</td></tr>
+<tr><td>실내 연간 직사광 250시간 초과 면적 (10% 이하 만점)</td><td>20</td><td>6</td><td>24% (층판 없을 때 28%)</td></tr>
+<tr><td>테라스 동지 일조 2시간 이상 면적</td><td>15</td><td>15</td><td>92%, 평균 4.7시간</td></tr>
+<tr><td>테라스 여름 오후(13–17시) 직사광 비율 (30% 이하 만점)</td><td>20</td><td>0</td><td>90%</td></tr>
+</tbody>
+</table>
+<h3>중정 쪽 4m 실내 (층판 있음 / 없음)</h3>
+<table>
+<thead><tr><th>층</th><th>평균 주광률 %</th><th>주광률 2% 이상</th><th>직사광 250h 초과</th></tr></thead>
+<tbody>
+<tr><td>1F</td><td>2.3 / 3.2</td><td>46% / 83%</td><td>6% / 32%</td></tr>
+<tr><td>2F</td><td>3.5 / 4.2</td><td>75% / 91%</td><td>23% / 45%</td></tr>
+<tr><td>3F</td><td>3.8 / 4.6</td><td>67% / 91%</td><td>38% / 52%</td></tr>
+<tr><td>4F</td><td>4.8 / 4.8</td><td>91% / 91%</td><td>56% / 56%</td></tr>
+</tbody>
+</table>
+<ul class="clean">
+<li><b>실내</b> — 층판으로 중정 쪽 주광률이 0.7~0.9%p 낮아지고, 직사광 250시간 초과 면적은 2F 22%p, 3F 14%p 줄었다. 실내 세 항목 합계는 50점(층판 없을 때 47점).</li>
+<li><b>1F</b> — 중정 쪽 주광률 2% 이상 면적이 83%에서 46%로 줄었다. 감소 폭이 가장 큰 층.</li>
+<li><b>유리 접합부</b> — 2F 동쪽 동 모서리, 남쪽 동 서쪽 끝에서 주광률이 최대 3%p 낮아진다.</li>
+<li><b>감점 항목</b> — 테라스 여름 오후 직사광(0/20)과 3·4F 중정 쪽 직사광. 지붕이 없는 상태의 값.</li>
+</ul>
+</div>
+<figure><img src="img/a_01.jpg" alt="1~3층 주광률과 연간 직사광 시간, 테라스 동지 일조와 여름 오후 직사광 지도" loading="lazy"><figcaption>1–3F 주광률 · 연간 직사광 시간 / 테라스 동지 일조 시간 · 여름 오후 직사광 비율 / 2F 주광률 변화(층판 있음 − 없음)</figcaption></figure>
+<h2>칸별 높이</h2>
+<div class="body">
+<ul class="clean">
+<li><b>3F 육각형 층판</b> — 2F FL 기준 +0 ~ +3,600, 594자리.</li>
+<li><b>4F 삼각형 층판</b> — 3F FL 기준 −100 ~ +3,500, 477자리. 두 층판 모두 육각형과 삼각형 칸을 포함.</li>
+<li><b>모델 오차</b> — 판 1,233장 중 579장이 5mm 낮게 놓여 있음 (예: +200 대신 +195).</li>
+</ul>
+</div>
+<figure><img src="img/a_02.jpg" alt="육각형과 삼각형 칸의 윗면 높이 평면" loading="lazy"><figcaption>칸별 윗면 높이 — 숫자 × 100mm = FL+</figcaption></figure>
+<h2>지붕 위치와 높이</h2>
+<div class="body">
+<ul class="clean">
+<li><b>방법</b> — 중정을 1m × 1m × 0.5m 칸으로 나누고, 칸마다 테라스 여름 오후 직사광을 가리는 비율(이득)과 실내 하늘빛·테라스 겨울(11–2월 9–16시) 직사광을 가리는 비율(손해, 1:1 평균)을 비교. 이득이 큰 칸만 남김. 조건: 테라스 위 2.4m 비움, 중정 쪽 유리 앞 3.5m 제외, 옥상(RF) 이하.</li>
+<li><b>테라스 위</b> — 효과가 가장 큰 지붕 아랫면 높이 중앙값 4F FL+1,000 (아래 테라스에서 약 3.8m). 4F FL 아래에서는 손해가 이득보다 큼.</li>
+<li><b>테라스 서쪽 바깥</b> — 중앙값 5F FL+1,100. 여름 오후 직사광의 입사각이 낮아 측면 차양으로 작동하는 위치.</li>
+<li><b>제외</b> — 유리 앞 3.5m, 층판 사이의 빈 자리.</li>
+</ul>
+</div>
+<figure><img src="img/a_03.jpg" alt="지붕 위치와 지붕 아랫면 높이 평면" loading="lazy"><figcaption>① 지붕 위치 ② 지붕 아랫면 높이 (FL 기준)</figcaption></figure>
+<div class="body">
+<p>가정: 방위는 배치도 방위표(북 = 도면 오른쪽에서 반시계 약 6°), 서울 위도 37.57°. 주광률 = CIE 흐린 하늘 하늘 성분 + 반사 성분 1.1%(일정), 유리 투과율 0.7. 직사광은 매월 21일 매시, 월별 일조율 가중. 블라인드·가구·인접 건물 제외. 중정 쪽 입면은 기존 창. 점수 배점과 이득·손해 1:1 비교는 임의로 정한 기준.</p>
+</div>
+</section>
+
+<section class="view" id="v-next" data-title="다음">
+<div class="crumb">진행 중 · 2026.11.17</div>
 <h1>다음 할 일</h1>
 <p class="sub">작업이 끝날 때마다 이 기록에 이어 붙인다</p>
 <div class="body">
 <ul class="clean check">
-<li>층별 평면 위에 감싸임 · 걸러짐 · 열림 세 단계 시선 지도 — 주장 노트 6번</li>
-<li>곡선 규칙과 종합 분포도로 층별 평면 다시 그리기 — 계단참 · 접합부 · 보이드 · 계단</li>
-<li>사례 조사 — 건드 홀 트레이, 헤르츠버거, 도널드 쇤, 프라이 오토</li>
-<li>단면에 겨울·여름 해가 드는 모습 표시</li>
-<li>감싸는 지붕 막의 직조 밀도(반투명도) 정하기 — 시선을 얼마나 거를지</li>
-<li>스토리보드 컷 그리기</li>
-<li>패널 맨 위에 주장 문장 넣기</li>
+<li>지붕 모델링 (서진) — 10의 지붕 위치 · 높이 기준. 모델링 후 같은 조건으로 재계산</li>
+<li>1F 위 칸의 틈 벌리기, 유리에 닿는 두 곳을 통로 폭만 남기고 떼기</li>
+<li>5mm 낮게 놓인 판 579장 정리</li>
+<li>난간 얹기 — 해 쪽 가장자리 거는 칸</li>
+<li>3F 바닥이 띠처럼 좁은 곳, 4F 코어 쪽 판 모서리가 유리 앞 3.5m에 걸친 곳 정리</li>
+<li>지하주차장 (과제 조건)</li>
+<li>프로그램 구성</li>
+<li>스토리보드 · 시선 기준</li>
+<li>수업 11.16 · 11.23 · 11.30 · 12.7, 중간발표 12.14</li>
 </ul>
 </div>
 </section>
@@ -626,13 +687,13 @@ footer{max-width:1180px;margin:0 auto;padding:24px;border-top:1px solid var(--li
 </nav>
 </main>
 
-<footer>마지막 업데이트 2026.11.07 · 계산은 맑은 날 직사광과 균일한 하늘빛 기준, 바닥판은 빛을 완전히 막는다고 가정, 주변 건물과 지형 제외.</footer>
+<footer>마지막 업데이트 2026.11.17 · 계산은 맑은 날 직사광과 균일한 하늘빛 기준, 바닥판은 빛을 완전히 막는다고 가정, 주변 건물과 지형 제외.</footer>
 
 <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="이미지 크게 보기"><button id="lbClose">닫기</button><img id="lbImg" alt=""></div>
 
 <script>
 (function(){
-  var order=['overview','story','thesis','drawings','problem','open','sun','experiments','decision','interior','roof','distribution','next'];
+  var order=['overview','story','thesis','drawings','problem','open','sun','experiments','decision','interior','roof','distribution','model17','next'];
   function show(){
     var h=(location.hash||'#overview').slice(1); if(order.indexOf(h)<0) h='overview';
     order.forEach(function(k){
